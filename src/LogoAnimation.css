@@ -1,0 +1,78 @@
+* {
+  margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+  }
+
+  
+  .header {
+    --high-opacity: 1;
+    --low-opacity: 0.6;
+    --spiral-height: 50px;
+    --letter-gap: 5px;
+    --animation-duration: 5s;
+  }
+  
+  .header {
+    margin-top: 50px;
+    color: #244a7c;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+  
+  @property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  
+  .animated-span,
+  .animated-span-2 {
+    display: flex;
+    align-items: center;
+    gap: var(--letter-gap);
+    position: absolute;
+  }
+  
+  .animated-span span {
+    display: inline-block;
+    transform: translateY(calc(sin(var(--angle)) * var(--spiral-height)))
+      scale(calc(cos(var(--angle)) * 0.5 + 0.5));
+    animation: spiral var(--animation-duration) linear infinite;
+  }
+  
+  .animated-span-2 span {
+    display: inline-block;
+    transform: translateY(calc(sin(var(--angle)) * var(--spiral-height)))
+      scale(calc(cos(var(--angle)) * 0.5 + 0.5));
+    animation: spiral var(--animation-duration) linear infinite;
+  }
+
+  .header:hover .animated-span span {
+    animation-direction: reverse;
+    color: yellow;
+  }
+  
+  .header:hover .animated-span-2 span {
+    animation-direction: reverse;
+    color: purple;
+  }
+
+
+  
+  @keyframes spiral {
+    0% {
+      --angle: 360deg;
+      opacity: var(--high-opacity);
+    }
+    100% {
+      --angle: 0deg;
+      opacity: var(--low-opacity);
+    }
+  }
