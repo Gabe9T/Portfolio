@@ -1,4 +1,3 @@
-import React from 'react';
 import LogoAnimation from './LogoAnimation';
 import Projects from './Projects';
 import AboutMe from './AboutMe';
