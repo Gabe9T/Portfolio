@@ -1,3 +1,11 @@
 a {
     font-size: 30px;
 }
+.contact img {
+    width: 50px;
+    height: auto;
+}
+
+.contact div {
+    margin-bottom: 20px;
+  }
