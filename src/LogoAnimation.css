@@ -16,7 +16,6 @@
   
   .header {
     margin-top: 50px;
-    color: #244a7c;
     height: 10vh;
     display: flex;
     flex-direction: column;
@@ -56,7 +55,7 @@
 
   .header:hover .animated-span span {
     animation-direction: reverse;
-    color: yellow;
+    color: #222A68
   }
   
   .header:hover .animated-span-2 span {

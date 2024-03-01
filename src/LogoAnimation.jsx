@@ -38,11 +38,10 @@ const LogoAnimation = () => {
 
   return (
     <div className="header">
-      <span className="animated-span-2">Gabriel Tucker Software Engineer</span>
-      <span className="animated-span">Gabriel Tucker Software Engineer</span>
+      <span className="animated-span-2">Gabriel Engineer Software Tucker</span>
+      <span className="animated-span">Software Tucker Gabriel Engineer </span>
       </div>
   );
 };
 
 export default LogoAnimation;
-
