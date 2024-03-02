@@ -55,12 +55,14 @@
 
   .header:hover .animated-span span {
     animation-direction: reverse;
-    color: #222A68
+    color: #16453e;
+    text-shadow: 0 0 10px #16453e, 0 0 20px #16453e, 0 0 30px #16453e;
   }
   
   .header:hover .animated-span-2 span {
     animation-direction: reverse;
     color: purple;
+    text-shadow: 0 0 10px purple, 0 0 20px purple, 0 0 30px purple;
   }
 
 
