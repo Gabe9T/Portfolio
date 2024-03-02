@@ -5,23 +5,3 @@
   justify-content: center;
   color: #F4FFF8;
 }
-.img-container {
-  position: absolute;
-  transition: all 0.5s ease-in-out;
-  z-index: 1;
-}
-
-.random-image {
-  width: 107px;
-  height: 50px;
-  cursor: pointer;
-}
-
-.random-image:hover {
-  cursor: pointer;
-}
-
-.random-image:hover .image-container {
-  position: absolute;
-  transition: all 0.5s ease-in-out;
-}
