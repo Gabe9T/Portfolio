@@ -8,6 +8,7 @@
 .img-container {
   position: absolute;
   transition: all 0.5s ease-in-out;
+  z-index: 1;
 }
 
 .random-image {
