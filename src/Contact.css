@@ -1,11 +1,35 @@
-a {
-    font-size: 30px;
+.contact {
+    text-align: center;
 }
-.contact img {
-    width: 50px;
-    height: auto;
+
+.icons {
+    display: flex;
+    justify-content: center;
 }
+
+.icons a {
+    margin: 0 10px;
+}
+
 
 .contact div {
     margin-bottom: 20px;
-  }
+}
+
+.contact a {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+    .contact {
+        flex-direction: row;
+    }
+}
