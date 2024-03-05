@@ -15,7 +15,7 @@ const MovingImage = () => {
   const calculateInitialPosition = () => {
     const imageWidth = 107;
     const imageHeight = 50;
-    const initialX = (window.innerWidth - imageWidth) / 2 + 600;
+    const initialX = (window.innerWidth - imageWidth) / 2 + 550;
     const initialY = (window.innerHeight - imageHeight) / 2;
     setPosition({ x: initialX, y: initialY });
     setInitialPositionCalculated(true);
